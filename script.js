@@ -16,13 +16,9 @@ function checkNav() {
   if (closes.classList.contains("displayNone")) {
     closes.classList.remove("displayNone");
     open.classList.add("displayNone");
-    main.classList.add("displayNone");
-    hero.classList.add("displayNone");
   } else {
     closes.classList.add("displayNone");
     open.classList.remove("displayNone");
-    main.classList.remove("displayNone");
-    hero.classList.add("displayNone");
   }
 }
 

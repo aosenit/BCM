@@ -23,10 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  position: relative;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -73,10 +69,27 @@ button:hover {
 .headerMenu {
   cursor: pointer;
   color: var(--tertiaryColor);
-  position: fixed;
-  right: 1.5rem;
-  top: 1.5rem;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.headerMenu div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
   z-index: 999;
+  background-color: var(--whiteColor);
+  border-bottom: 1px solid ghostwhite;
 }
 
 .header {
@@ -84,13 +97,12 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 999;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .logo {
@@ -116,15 +128,7 @@ button:hover {
   color: var(--primaryColor);
 }
 
-.header .headerNav {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: calc(100vh);
-}
-
-.header .headerNav ul {
+header ul {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
   display: -ms-grid;
@@ -135,9 +139,19 @@ button:hover {
   -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
-.header .headerNav ul li {
+.hide {
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 99%, 100% 100%);
+          clip-path: polygon(100% 0, 0 0, 0 99%, 100% 100%);
+}
+
+header li {
   list-style: none;
   font-size: 1.2rem;
   cursor: pointer;
@@ -147,32 +161,20 @@ button:hover {
   text-align: center;
 }
 
-.header .headerNav ul li:hover {
+header li:hover {
   color: var(--tertiaryColor);
 }
 
-.header .headerNav .active {
+.active {
   color: var(--tertiaryColor);
-}
-
-.header .headerNav .hide {
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 99%, 100% 100%);
-          clip-path: polygon(100% 0, 0 0, 0 99%, 100% 100%);
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  place-items: center;
-  background: -webkit-gradient(linear, left top, right top, color-stop(25%, var(--whiteColor)), color-stop(70%, var(--primaryColor)));
-  background: linear-gradient(to right, var(--whiteColor) 25%, var(--primaryColor) 70%);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background: var(--whiteColor);
   height: calc(100vh - 80px);
-  overflow: hidden;
 }
 
 .hero a {
@@ -180,44 +182,75 @@ button:hover {
 }
 
 .hero .heroImage {
-  height: 60%;
   width: 100%;
+  max-width: 350px;
 }
 
 .hero .heroImage img {
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero .heroText {
-  -webkit-box-align: justify;
-      -ms-flex-align: justify;
-          align-items: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .hero .heroText h1 {
-  font-size: 1.4rem;
+  font-size: 5vh;
+  margin-bottom: 1rem;
+}
+
+.hero .heroText p {
+  max-width: 90%;
+  font-size: 1rem;
 }
 
 .about {
+  background-color: var(--primaryColor);
+  margin-top: 2rem;
+}
+
+.aboutContainer {
   display: -ms-grid;
   display: grid;
   gap: 2rem;
+  color: var(--whiteColor);
 }
 
-.about .aboutText {
-  background-color: var(--primaryColor);
-  color: var(--whiteColor);
-  padding: 2rem;
+.aboutContainer p {
+  line-height: 20px;
+}
+
+.aboutContainer .aboutText {
+  padding: 2rem 0;
+}
+
+.services {
+  text-align: center;
+  width: 100%;
+}
+
+.services p {
+  font-size: 1rem;
 }
 
 .services .servicesCard {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-  width: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .services .servicesCard .service {
@@ -228,21 +261,37 @@ button:hover {
   text-align: center;
 }
 
+.services .servicesCard .service p {
+  font-size: 0.9rem;
+  max-width: 25ch;
+}
+
+.services .servicesCard .service h5 {
+  margin-top: 1rem;
+  font-size: medium;
+}
+
 .services .servicesCard .service .serviceCardImage {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: var(--secondaryColor);
+  height: 200px;
+  width: 80%;
+  border-radius: 10px;
   overflow: hidden;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .services .servicesCard .service .serviceCardImage img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
+}
+
+.projects {
+  background-color: whitesmoke;
 }
 
 .swiper {
@@ -290,8 +339,13 @@ button:hover {
 
 .mySwiper2 {
   width: 100%;
-  height: 300px;
+  height: 400px;
   overflow-y: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: var(--tertiaryColor);
 }
 
 .mySwiper {
@@ -305,6 +359,7 @@ button:hover {
 .mySwiper .swiper-slide {
   width: 25%;
   height: 100%;
+  padding: 1rem 0;
   opacity: 0.4;
 }
 
@@ -318,6 +373,8 @@ button:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .contact .contactUsInfos {
@@ -388,6 +445,7 @@ footer ul {
 }
 
 .displayNone {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
 }
 /*# sourceMappingURL=styles.css.map */

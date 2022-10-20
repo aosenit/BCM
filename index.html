@@ -23,10 +23,7 @@
   </head>
 
   <body>
-    <div class="headerMenu">
-       <div class="open"><span class="material-symbols-outlined "> widgets </span></div> 
-        <div class="close"><span class="material-symbols-outlined close">close</span></div>
-    </div>
+  
     <header>
       <div class="header container">
         <div >
@@ -44,18 +41,20 @@
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <a href="mailto:mbconcept9@gmail.com"><button>Contact Us</button></a>
+          <a href="mailto:mbconcept9@gmail.com" target="_blank"><button>Contact Us</button></a> 
           </ul>
         </nav>
 
-        
+        <div class="headerMenu">
+          <div class="open"><span class="material-symbols-outlined "> widgets </span></div> 
+           <div class="close"><span class="material-symbols-outlined close">close</span></div>
+       </div>
       </div>
     </header>
       <div class="hero" id="home">
         <div class="heroImage container">
           <img
-            src="https://images.pexels.com/photos/1243711/pexels-photo-1243711.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src="./assets/gif/herogifTwo.gif"
             alt="hero image"
           />
         </div>
@@ -71,26 +70,28 @@
     
 
     <main class="main">
-      <section class="about container" id="about">
-        <div class="aboutTop">
-          <h2>About Company</h2>
-          <p>
-            Merci Brandin Concept is a marketing and communications solution provider of high quality promotions, marketing and advertising tools for clients across all categories.
-          </p>
-          <a href="#contact"><button>Contact</button></a>
-        </div>
-
-        <div class="aboutBottom">
-          <img
-            src="https://images.pexels.com/photos/3345876/pexels-photo-3345876.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            alt="about image"
-          />
-          <div class="aboutText">
-            <h3>We are MBC</h3>
+      <section class="about" id="about">
+        <div class="container aboutContainer">
+          <div class="aboutTop">
+            <h2>About Company</h2>
             <p>
-              We give you high quality and timely services, just as you like it. 
+              Merci Brandin Concept is a marketing and communications solution provider of high quality promotions, marketing and advertising tools for clients across all categories.
             </p>
             <a href="#contact"><button>Contact</button></a>
+          </div>
+  
+          <div class="aboutBottom">
+            <img
+              src="https://images.pexels.com/photos/3345876/pexels-photo-3345876.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="about image"
+            />
+            <div class="aboutText">
+              <h3>We are MBC</h3>
+              <p>
+                We give you high quality and timely services, just as you like it. 
+              </p>
+              <a href="#contact"><button>Contact</button></a>
+            </div>
           </div>
         </div>
       </section>
@@ -102,7 +103,7 @@
           <div class="service">
             <div class="serviceCardImage">
               <img
-                src="https://images.pexels.com/photos/5864174/pexels-photo-5864174.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src="./assets/newImage/mtnHanger.jpeg"
                 alt="service image"
               />
             </div>
@@ -116,7 +117,7 @@
           <div class="service">
             <div class="serviceCardImage">
               <img
-                src="https://images.pexels.com/photos/10503405/pexels-photo-10503405.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src="./assets/newImage/mtnTwo.jpeg"
                 alt="service image"
               />
             </div>
@@ -129,7 +130,7 @@
           <div class="service">
             <div class="serviceCardImage">
               <img
-                src="https://images.pexels.com/photos/7563661/pexels-photo-7563661.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src="./assets/newImage/canopy.jpeg"
                 alt="service image"
               />
             </div>
@@ -142,7 +143,7 @@
           <div class="service">
             <div class="serviceCardImage">
               <img
-                src="https://images.pexels.com/photos/2085739/pexels-photo-2085739.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src="./assets/newImage/capOne.jpeg"
                 alt="service image"
               />
             </div>
@@ -157,63 +158,90 @@
         </div>
         <a href="#contact"><button>Contact</button></a>
       </section>
-      <section class="projects container" id="projects">
-        <h2>Projects</h2>
-        <p>Browse throw some of our delivered work</p>
-        <div
-          style="
-            --swiper-navigation-color: #fff;
-            --swiper-pagination-color: #fff;
-          "
-          class="swiper mySwiper2"
-        >
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/images/pOne.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pTwo.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pThree.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pFour.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pFive.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pSix.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pSeven.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pEight.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pNine.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pTen.jpeg" />
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-        <div thumbsSlider="" class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/images/pOne.jpeg" />
-            </div>
-            <div class="swiper-slide">
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <p>Browse throw some of our delivered work</p>
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mySwiper2"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/newImage/boltCannopy.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/canopy.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/capOne.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/danacidShelve.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/foodnet.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/imtelStand.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/Jersey.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/kn.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/lumosBanner.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/mtn.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/mtnHanger.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/renewBanner.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/mtnTwo.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/shirtOne.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/renewTwo.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/spaghettiStand.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/stand.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/Tent.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/vanOne.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/vanTwo.jpeg" />
+              </div>
+             
+  
+              <div class="swiper-slide">
+                <img src="./assets/images/pOne.jpeg" />
+              </div>
+              <div class="swiper-slide">
                 <img src="./assets/images/pTwo.jpeg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/pThree.jpeg" />
-            </div>
-            <div class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/pThree.jpeg" />
+              </div>
+              <div class="swiper-slide">
                 <img src="./assets/images/pFour.jpeg" />
               </div>
               <div class="swiper-slide">
@@ -234,6 +262,103 @@
               <div class="swiper-slide">
                 <img src="./assets/images/pTen.jpeg" />
               </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/newImage/boltCannopy.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/canopy.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/capOne.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/danacidShelve.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/foodnet.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/imtelStand.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/Jersey.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/kn.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/lumosBanner.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/mtn.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/mtnHanger.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/renewBanner.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/mtnTwo.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/shirtOne.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/renewTwo.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/spaghettiStand.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/stand.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/Tent.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/vanOne.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/newImage/vanTwo.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/pOne.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                  <img src="./assets/images/pTwo.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/pThree.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                  <img src="./assets/images/pFour.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/pFive.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/pSix.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/pSeven.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/pEight.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/pNine.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/pTen.jpeg" />
+                </div>
+            </div>
           </div>
         </div>
       </section>
@@ -261,13 +386,13 @@
           </div>
         </div>
         <div class="socialMedia">
-          <i class="bx bxl-facebook"></i>
-          <i class="bx bxl-twitter"></i>
-          <i class="bx bxl-instagram"></i>
+          <!-- <i class="bx bxl-facebook"></i> -->
+          <a href="https://twitter.com/Mercibrandi" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
+          <a href="http://instagram.com/mercibrandiconcept" target="_blank">  <i class="bx bxl-instagram"></i></a>
         </div>
       </section>
     </main>
-
+    
     <footer class="">
      <div class="footer container ">
         <a href="#"><h4 class=""> <span style=" font-weight: bold"
@@ -280,9 +405,10 @@
             </ul>
           
           <div class="socialMedia">
-            <i class="bx bxl-facebook"></i>
-            <i class="bx bxl-twitter"></i>
-            <i class="bx bxl-instagram"></i>
+            <!-- <i class="bx bxl-facebook"></i> -->
+            <a href="https://twitter.com/Mercibrandi" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
+            <a href="http://instagram.com/mercibrandiconcept" target="_blank">  <i class="bx bxl-instagram"></i></a>
+          
           </div>
           <h6>&copy; Merci Brandin Concept  2022, All rights reserved.</h6>
           <p>

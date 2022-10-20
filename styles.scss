@@ -26,10 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  position: relative;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -73,21 +69,32 @@ button {
 .headerMenu {
   cursor: pointer;
   color: var(--tertiaryColor);
-  position: fixed;
-  right: 1.5rem;
-  top: 1.5rem;
-  z-index: 999;
+  position: relative;
+  height: 30px;
+  width: 30px;
+
+  div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
-// header {
-//   height: 100vh;
-// }
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--whiteColor);
+  border-bottom: 1px solid ghostwhite;
+}
 
 .header {
   height: 80px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  z-index: 999;
+  align-items: center;
 
   .logo {
     display: flex;
@@ -107,121 +114,148 @@ button {
       }
     }
   }
+}
 
-  .headerNav {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh);
-    // z-index: 999;
-    ul {
-      background-color: var(--primaryColor);
-      color: var(--whiteColor);
-      display: grid;
-      place-content: center;
-      clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
-      transition: 0.5s linear;
-      height: 100%;
+header ul {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  display: grid;
+  place-content: center;
+  clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+  transition: 0.5s linear;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
 
-      li {
-        list-style: none;
-        font-size: 1.2rem;
-        cursor: pointer;
-        padding-bottom: 1rem;
-        transition: 0.5s linear;
-        text-align: center;
+.hide {
+  clip-path: polygon(100% 0, 0 0, 0 99%, 100% 100%);
+}
 
-        &:hover {
-          color: var(--tertiaryColor);
-        }
-      }
-    }
+header li {
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  transition: 0.5s linear;
+  text-align: center;
 
-    .active {
-      color: var(--tertiaryColor);
-    }
-
-    .hide {
-      clip-path: polygon(100% 0, 0 0, 0 99%, 100% 100%);
-    }
+  &:hover {
+    color: var(--tertiaryColor);
   }
 }
 
+.active {
+  color: var(--tertiaryColor);
+}
+
 .hero {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  background: linear-gradient(
-    to right,
-    var(--whiteColor) 25%,
-    var(--primaryColor) 70%
-  );
+  display: grid;
+  place-content: center;
+  background: var(--whiteColor);
   height: calc(100vh - 80px);
-  overflow: hidden;
+  // padding: 2rem 0;
 
   a {
     position: relative;
   }
   .heroImage {
-    height: 60%;
     width: 100%;
+    max-width: 350px;
 
     img {
-      height: 100%;
+      object-fit: cover;
     }
   }
 
   .heroText {
-    align-items: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     h1 {
-      font-size: 1.4rem;
+      font-size: 5vh;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 90%;
+      font-size: 1rem;
     }
   }
 }
-
 .about {
+  background-color: var(--primaryColor);
+  margin-top: 2rem;
+}
+
+.aboutContainer {
   display: grid;
   gap: 2rem;
 
+  color: var(--whiteColor);
+
+  p {
+    line-height: 20px;
+  }
+
   .aboutText {
-    background-color: var(--primaryColor);
-    color: var(--whiteColor);
-    padding: 2rem;
+    padding: 2rem 0;
   }
 }
 
 .services {
+  text-align: center;
+  width: 100%;
+  p {
+    font-size: 1rem;
+  }
   .servicesCard {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
-    width: 100%;
-    margin-top: 1rem;
+    // width: 100%;
+    margin-top: 2rem;
 
     .service {
       display: grid;
       gap: 0.5rem;
       place-items: center;
       text-align: center;
+      p {
+        font-size: 0.9rem;
+        max-width: 25ch;
+      }
+
+      h5 {
+        margin-top: 1rem;
+        font-size: medium;
+      }
 
       .serviceCardImage {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        background-color: var(--secondaryColor);
+        height: 200px;
+        width: 80%;
+        border-radius: 10px;
         overflow: hidden;
+        padding: 2rem;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 
         img {
           height: 100%;
           width: 100%;
-          object-fit: cover;
+          object-fit: contain;
           object-position: center;
         }
       }
     }
   }
+}
+.projects {
+  background-color: whitesmoke;
 }
 
 .swiper {
@@ -271,8 +305,13 @@ button {
 
 .mySwiper2 {
   width: 100%;
-  height: 300px;
+  height: 400px;
   overflow-y: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: var(--tertiaryColor);
 }
 
 .mySwiper {
@@ -285,6 +324,7 @@ button {
 .mySwiper .swiper-slide {
   width: 25%;
   height: 100%;
+  padding: 1rem 0;
   opacity: 0.4;
 }
 
@@ -297,6 +337,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .contact {
@@ -355,5 +396,6 @@ footer {
 }
 
 .displayNone {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
 }
