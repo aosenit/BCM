@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+:root {
+  --fontPrimary: "Montserrat", sans-serif;
+  --fontSecondary: "Montserrat", sans-serif;
+  --fontTertiary: "Montserrat", sans-serif;
+
+  --primaryColor: #283869;
+  --secondaryColor: #cc2b6b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fontPrimary);
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+}
