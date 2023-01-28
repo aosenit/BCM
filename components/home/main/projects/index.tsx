@@ -6,9 +6,9 @@ import ProjectLarge from "./ProjectLarge";
 
 const Projects = () => {
   return (
-    <div className="my-10">
+    <div className="py-10" id="project">
       <div className={`${contain} h-[400px] lg:h-fit`}>
-        <div className="text-center mb-5 grid justify-center">
+        <div className="lg:text-center mb-5 grid lg:justify-center">
           <Title title={"Recent Work"} subTitle={"Our Latest Project"} />
         </div>
         <ProjectMobile />

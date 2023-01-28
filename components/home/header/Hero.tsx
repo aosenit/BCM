@@ -3,15 +3,21 @@ import { contain } from "../../../pages/home";
 
 const Hero = () => {
   return (
-    <div className="w-full pt-[160px] lg:grid items-center h-fit lg:h-[calc(100%_-_80px)] text-[12px] lg:text-[14px] py-[3rem] lg:py-0 px-2 lg:px-0">
+    <div
+      className="w-full pt-[120px] lg:grid items-center h-fit lg:h-[calc(100%_-_80px)] text-[14px] lg:text-[14px] py-[3rem] lg:py-0 px-2 lg:px-0"
+      id="home"
+    >
       <div
         className={`${contain} flex  items-center gap-10 lg:gap-20 w-full flex-col lg:flex-row`}
       >
-        <div className="h-full lg:flex-1 flex flex-col gap-5 ">
-          <h3 className="text-[18px] lg:text-[28px] text-[var(--secondaryColor)]">
+        <div
+          className="h-full lg:flex-1 flex flex-col gap-5 "
+          data-aos="fade-in"
+        >
+          <h3 className="text-[20px] lg:text-[28px] text-[var(--secondaryColor)]">
             We Bring you the best Designs with Technology
           </h3>
-          <h1 className="leading-[40px] text-[30px] lg:text-[46px] lg:leading-[50px]">
+          <h1 className="leading-[40px] text-[35px] lg:text-[46px] lg:leading-[50px]">
             The Best Copying and Printing Center
           </h1>
           <p>
@@ -29,11 +35,11 @@ const Hero = () => {
         </div>
 
         <div className="lg:flex-1 relative w-full  h-[40vh] lg:h-[50vh] lg:w-[40vw] overflow-hidden ">
-          <div className="absolute w-[52%] h-[80%] bg-yellow-400 top-0 left-0 flex justify-center items-center ">
+          <div className="absolute w-[53%] h-[80%] bg-yellow-400 top-0 left-0 flex justify-center items-center ">
             <img
               src="https://images.pexels.com/photos/8171898/pexels-photo-8171898.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
-              className="w-[70%] h-[70%] object-cover object-center "
+              className="w-[80%] h-[85%] object-cover object-center "
             />
           </div>
 
@@ -41,7 +47,7 @@ const Hero = () => {
             <img
               src="https://images.pexels.com/photos/291536/pexels-photo-291536.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
-              className="w-[70%] h-[70%] object-cover object-center "
+              className="w-[80%] h-[80%] object-cover object-center "
             />
           </div>
 
@@ -49,7 +55,7 @@ const Hero = () => {
             <img
               src="https://images.pexels.com/photos/2587175/pexels-photo-2587175.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
-              className="w-[70%] h-[70%] object-cover object-center "
+              className="w-[85%] h-[80%] object-cover object-center "
             />
           </div>
         </div>

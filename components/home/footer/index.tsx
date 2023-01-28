@@ -12,12 +12,14 @@ const Footer = () => {
   console.log(list);
 
   return (
-    <footer className="bg-[var(--primaryColor)] text-white ">
-      <div className={`${contain} py-5`}>
-        <Group className="py-2">
+    <footer className="bg-[var(--primaryColor)] text-white " id={"contact"}>
+      <div className={`${contain} py-5  `}>
+        <Group className="py-2 max-w-md">
           <Box>
-            <Text className="text-[var(--secondaryColor)]">MERCI BRANDI</Text>
-            <Text size={"sm"} className="mb-5 mt-2 text-[12px]">
+            <Text className="text-[var(--secondaryColor)] text-[24px]">
+              MERCI BRANDI CONCEPT
+            </Text>
+            <Text size={"sm"} className="mb-5 mt-2 text-[14px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
               minus molestiae tempora ab impedit optio exercitationem reiciendis
               dolores distinctio inventore.
@@ -26,28 +28,28 @@ const Footer = () => {
           </Box>
         </Group>
 
-        <Group className="border-t-[1px] border-slate-200 py-3">
-          <nav className="text-[11px] list-none hover:underline cursor-pointer hover:text-[var(--secondaryColor)]">
+        <Group className="border-t-[1px] border-slate-200  py-3 md:justify-between">
+          <nav className="text-[12px] list-none  cursor-pointer ">
             <Group>
-              <li>
-                <a href="#">Home</a>
+              <li className="hover:underline">
+                <a href="#home">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li className="hover:underline">
+                <a href="#about">About</a>
               </li>
-              <li>
-                <a href="#">Services</a>
+              <li className="hover:underline">
+                <a href="#services">Services</a>
               </li>
-              <li>
-                <a href="#">Portfolio</a>
+              <li className="hover:underline">
+                <a href="#project">Portfolio</a>
               </li>
             </Group>
           </nav>
-          <Box>
-            <Text className="text-[11px]">
+          <Box className="md:flex items-center gap-2">
+            <Text className="text-[12px]">
               Copyright © Merci Brandin Concept 2023, All rights reserved.
             </Text>
-            <Text className="text-[11px] ">
+            <Text className="text-[12px] ">
               Designed by{" "}
               <a href="#" className="text-[var(--secondaryColor)]">
                 TRAZ
@@ -66,7 +68,7 @@ const Card = ({ icon, text }: any) => {
   return (
     <Group className="my-2 gap-1">
       <Box className="text-[var(--secondaryColor)]">{icon}</Box>
-      <Text className="text-[12px]">{text}</Text>
+      <Text className="text-[14px]">{text}</Text>
     </Group>
   );
 };

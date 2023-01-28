@@ -20,6 +20,13 @@
   font-family: var(--fontPrimary);
 }
 
+a {
+  text-decoration: none !important;
+}
+li {
+  list-style-type: none !important;
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
 }

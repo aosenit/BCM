@@ -32,17 +32,20 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-gray-200 py-12 lg:h-[60vh] lg:grid place-content-center">
-      <div className={`${contain} flex flex-col items-center `}>
-        <div className="text-3xl font-medium text-center mb-8">
+    <section
+      className="bg-gray-200 py-12 lg:h-[60vh] lg:grid place-content-center"
+      id="services"
+    >
+      <div className={`${contain} flex flex-col lg:items-center `}>
+        <div className="text-3xl font-medium lg:text-center mb-8">
           <Title title={"Our Services"} subTitle={"Merci Brandi Services"} />
         </div>
         <div className="flex flex-wrap lg:grid grid-cols-4 w-full">
           {services.map((service, index) => (
             <div key={index} className="w-full  ">
-              <div className=" mb-8 h-[300px] bg-gray-100 flex flex-col mx-2 max-w-sm">
+              <div className=" mb-8 h-[300px] bg-gray-100 flex flex-col mx-2 max-w-sm p-6">
                 <div
-                  className={`flex-[.5] grid place-content-center  ${service.bg} `}
+                  className={`flex-[.6] grid place-content-center  ${service.bg} `}
                 >
                   <img
                     className="w-full object-contain object-center h-[100px] "

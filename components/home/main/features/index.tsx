@@ -32,7 +32,7 @@ const featuresData = [
 
 const Features = () => {
   return (
-    <div className="py-10 lg:py-20">
+    <div className="py-10 lg:py-20" id="features">
       <div className={`${contain} grid lg:justify-center lg:text-center`}>
         <Title
           title="Company Features"

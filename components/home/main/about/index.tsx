@@ -6,8 +6,10 @@ import { GiPirateCannon } from "react-icons/gi";
 
 const About = () => {
   return (
-    <div className="py-10">
-      <div className={`${contain} lg:flex gap-20 lg:py-40  `}>
+    <div className="py-14 pb-20" id="about">
+      <div
+        className={`${contain} flex flex-col-reverse  gap-10 lg:gap-20 lg:py-20  lg:flex-row `}
+      >
         <div className="relative h-[40vh] flex-1">
           <img
             src="https://images.pexels.com/photos/716411/pexels-photo-716411.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -22,10 +24,10 @@ const About = () => {
           />
         </div>
 
-        <div className="mt-20 lg:mt-0 text-[14px] flex flex-col gap-3 flex-1">
+        <div className=" lg:mt-0 text-[14px] flex flex-col gap-3 flex-1">
           <h3 className="text-[25px] text-[var(--secondaryColor)]">About Us</h3>
           <div className="lg:w-[60ch]">
-            <h2 className="text-[28px] leading-8 mb-3">
+            <h2 className="leading-[40px] text-[35px] lg:text-[46px] lg:leading-[50px] mb-3">
               Realizing Your Art & Design Become Real Product
             </h2>
             <p>

@@ -4,7 +4,10 @@ import { contain } from "../../../../pages/home";
 
 const Guildlines = () => {
   return (
-    <div className="bg-[var(--primaryColor)] text-white lg:min-h-[70vh] lg:grid lg:place-content-center">
+    <div
+      className="bg-[var(--primaryColor)] text-white lg:min-h-[70vh] lg:grid lg:place-content-center"
+      id="guildlines"
+    >
       <div className={`${contain} py-10 lg:grid grid-cols-2 gap-5`}>
         {" "}
         <div className="max-w-[90%]">

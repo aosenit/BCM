@@ -16,9 +16,9 @@ export default function TeamCard() {
       p="lg"
       withBorder
       radius={0}
-      className="w-100 min-w-[300px] max-w-sm"
+      className="w-100 min-w-[300px] max-w-sm "
     >
-      <Card.Section>
+      <Card.Section className="p-6">
         <Image
           src={
             "https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
