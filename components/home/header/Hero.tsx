@@ -1,5 +1,6 @@
 import React from "react";
 import { contain } from "../../../pages/home";
+import { Anchor } from "@mantine/core";
 
 const Hero = () => {
   return (
@@ -14,23 +15,31 @@ const Hero = () => {
           className="h-full lg:flex-1 flex flex-col gap-5 "
           data-aos="fade-right"
         >
-          <h3 className="text-[20px] lg:text-[28px] text-[var(--secondaryColor)]">
-            We Bring you the best Designs with Technology
+          <h3 className="text-[20px] lg:text-[28px] text-[var(--secondaryColor)] uppercase">
+            Stand out from the crowd with Merci Brandi Concept (MBC)
           </h3>
-          <h1 className="leading-[40px] text-[35px] lg:text-[46px] lg:leading-[50px]">
-            The Best Copying and Printing Center
+          <h1 className="leading-[40px] text-[35px] lg:text-[42px] lg:leading-[50px] capitalize">
+            Your one-stop shop for custom branding solutions
           </h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
-            vero officia odio, possimus cupiditate iste numquam rerum dolor.
+          <p className="text-[16px]">
+            From clothing, flags, POSM to signage, we will help you create a
+            cohesive and consistent brand identity that reflects your unique
+            style and values. Let us help you elevate your brand and make a
+            lasting impression on your customers.
           </p>
           <div className="flex items-center gap-10">
-            <button className="px-8 py-3 bg-[var(--secondaryColor)] hover:bg-white hover:text-[var(--secondaryColor)]">
-              READ MORE
-            </button>
-            <button className="hidden lg:block px-8 py-3 bg-white text-[var(--secondaryColor)] hover:bg-[var(--secondaryColor)] hover:text-white">
-              ABOUT US
-            </button>
+            <Anchor
+              href="#project"
+              className="px-8 text-inherit py-3 bg-[var(--secondaryColor)] hover:bg-white hover:text-[var(--secondaryColor)]"
+            >
+              PROJECTS
+            </Anchor>
+            <Anchor
+              href="#project"
+              className="hidden lg:block px-8 py-3 bg-white text-[var(--secondaryColor)] hover:bg-[var(--secondaryColor)] hover:text-white"
+            >
+              CONTACT
+            </Anchor>
           </div>
         </div>
 

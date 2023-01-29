@@ -14,11 +14,11 @@ import {
 const data = [
   { icon: <MdHome />, label: "Home", link: "#home" },
   { icon: <MdInfo />, label: "About Us", link: "#about" },
-  { icon: <MdFeaturedPlayList />, label: "Features", link: "#features" },
-  { icon: <MdBook />, label: "Guildlines", link: "#guildlines" },
+  // { icon: <MdFeaturedPlayList />, label: "Features", link: "#features" },
+  // { icon: <MdBook />, label: "Guildlines", link: "#guildlines" },
   { icon: <MdRoomService />, label: "Services", link: "#services" },
   { icon: <MdWork />, label: "Project", link: "#project" },
-  { icon: <MdPeople />, label: "Team", link: "#team" },
+  // { icon: <MdPeople />, label: "Team", link: "#team" },
   { icon: <MdContacts />, label: "Contact", link: "#contact" },
 ];
 

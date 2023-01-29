@@ -8,12 +8,12 @@ export const footerData = [
   },
   {
     icon: <MdEmail />,
-    text: "creativitytraz22@gmail.com",
-    link: "",
+    text: "mbconcept9@gmail.com",
+    link: "mailto:mbconcept9@gmail.com",
   },
   {
     icon: <MdCall />,
-    text: "08068095923",
-    link: "",
+    text: "+2349029859955",
+    link: "tel:+2349029859955",
   },
 ];

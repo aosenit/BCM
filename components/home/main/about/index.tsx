@@ -27,35 +27,39 @@ const About = () => {
         </div>
 
         <div
-          className=" lg:mt-0 text-[14px] flex flex-col gap-3 flex-1"
+          className=" lg:mt-0 text-[16px] flex flex-col gap-3 flex-1"
           data-aos="fade-up"
         >
           <h3 className="text-[25px] text-[var(--secondaryColor)]">About Us</h3>
           <div className="lg:w-[60ch]">
             <h2 className="leading-[40px] text-[35px] lg:text-[46px] lg:leading-[50px] mb-3">
-              Realizing Your Art & Design Become Real Product
+              About Merci Brandi Concept (MBC)
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fuga,
-              nam ad similique iure reprehenderit iste dolor sint est labore.
+              Merci Brandi Concept (MBC) is a full-service branding agency that
+              specializes in creating custom branding solutions for businesses
+              of all sizes. Our services include Branding, POSM, Flags, and
+              Signage. Whether you are looking to refresh your existing brand or
+              create a new one from scratch, we have the expertise and
+              experience to help you achieve your goals.
             </p>
           </div>
           <div className="flex flex-col w-[80%] gap-4 mt-5">
             <Tag
               text={
-                "nam ad similique iure reprehenderit iste dolor sint est labore"
+                "We have a team of experts who use the latest tools and technologies"
               }
               title={"Our Expert Staffs"}
               icon={<BsPerson />}
-              size="25px"
+              size="30px"
             />
             <Tag
               text={
-                "nam ad similique iure reprehenderit iste dolor sint est labore"
+                "We have the best tools and technologies tailored for your every need"
               }
-              title={"Our Expert Staffs"}
+              title={"Best Tools"}
               icon={<GiPirateCannon />}
-              size="25px"
+              size="30px"
             />
           </div>
         </div>

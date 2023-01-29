@@ -8,7 +8,7 @@ export default class _Document extends Document {
 
   render() {
     return (
-      <Html className="scroll-smooth scroll-p-[60px]">
+      <Html className="scroll-smooth scroll-p-[80px] lg:scroll-p-0">
         <Head />
         <body className="bg-slate-100">
           <Main />

@@ -2,6 +2,8 @@ import React from "react";
 import { contain } from "../../../../pages/home";
 import Title from "../Title";
 import { useRouter } from "next/router";
+import { Anchor } from "@mantine/core";
+import { FaArrowRight } from "react-icons/fa";
 
 const services = [
   {
@@ -39,7 +41,7 @@ const Services = () => {
   const router = useRouter();
   return (
     <section
-      className="bg-gray-200 py-12 lg:h-[60vh] lg:grid place-content-center"
+      className="bg-gray-200 py-12 lg:h-[100vh] lg:grid place-content-center "
       id="services"
     >
       <div className={`${contain} flex flex-col lg:items-center `}>
@@ -47,18 +49,18 @@ const Services = () => {
           className="text-3xl font-medium lg:text-center mb-8"
           data-aos="fade-down"
         >
-          <Title title={"Our Services"} subTitle={"Merci Brandi Services"} />
+          <Title title={"Our Services"} subTitle={"Explore what we render"} />
         </div>
         <div className="flex flex-wrap lg:grid grid-cols-4 w-full">
           {services.map((service, index) => (
             <div
               key={index}
-              className="w-full"
+              className="w-full cursor-pointer "
               data-aos="fade-up"
               data-aos-delay={`${index * 30}`}
               onClick={() => router.push(`projects#${service.link}`)}
             >
-              <div className=" mb-8 h-[300px] bg-gray-100 flex flex-col mx-2 max-w-sm p-6">
+              <div className=" mb-8 h-[300px] bg-gray-100 flex flex-col mx-2 max-w-sm p-6 relative">
                 <div
                   className={`flex-[.6] grid place-content-center  ${service.bg} `}
                 >
@@ -69,8 +71,14 @@ const Services = () => {
                   />
                 </div>
                 <div className="flex-[.5]  flex flex-col justify-center lg:text-center">
-                  <h4 className="text-xl font-medium mb-2">{service.title}</h4>
-                  <p className="text-gray-700 text-[14px]">{service.content}</p>
+                  <h4 className="text-xl font-bold mb-2">{service.title}</h4>
+                  <p className="text-gray-700 text-[16px]">{service.content}</p>
+                  <Anchor
+                    href={`projects#${service.link}`}
+                    className="text-[14px] absolute bottom-2 right-2 flex text-[var(--primaryColor)] gap-2 items-center"
+                  >
+                    See more <FaArrowRight />
+                  </Anchor>
                 </div>
               </div>
             </div>

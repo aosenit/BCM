@@ -126,7 +126,7 @@ const AllProduct = () => {
   return (
     <div>
       <div
-        className={`bg-white h-[80px] flex items-center fixed w-full top-0 left-0 z-10`}
+        className={`bg-white h-[80px] flex items-center fixed w-full top-0 left-0 z-10 `}
       >
         <Group className={`${contain} `}>
           <Anchor
@@ -149,7 +149,7 @@ const AllProduct = () => {
           <Title title="Projects" subTitle="View Our Amazing Projects" />
         </div>
         <div className="">
-          <div className="min-h-[50vh] my-5 " id="flag">
+          <div className="min-h-[100vh] my-5 " id="flag">
             <h2 className="text-[30px] font-bold lg:flex justify-center mb-2">
               Flag
             </h2>
@@ -158,7 +158,7 @@ const AllProduct = () => {
             </div>
             <div className="lg:flex gap-5 flex-wrap lg:justify-center"></div>
           </div>
-          <div className="min-h-[50vh] my-5" id="posm">
+          <div className="min-h-[100vh] my-5" id="posm">
             <h2 className="text-[30px] font-bold  lg:flex justify-center mb-2">
               POSM
             </h2>
@@ -166,7 +166,7 @@ const AllProduct = () => {
               {items(posm)}
             </div>
           </div>
-          <div className="min-h-[50vh] my-5" id="signage">
+          <div className="min-h-[100vh] my-5" id="signage">
             <h2 className="text-[30px] font-bold  lg:flex justify-center mb-2">
               Signage
             </h2>
@@ -174,7 +174,7 @@ const AllProduct = () => {
               {items(signage)}
             </div>
           </div>
-          <div className="min-h-[50vh] mb-5" id="branding">
+          <div className="min-h-[100vh] mb-5" id="branding">
             <h2 className="text-[30px] font-bold  lg:flex justify-center mb-2">
               Branding
             </h2>
