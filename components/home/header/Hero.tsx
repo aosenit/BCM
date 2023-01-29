@@ -12,7 +12,7 @@ const Hero = () => {
       >
         <div
           className="h-full lg:flex-1 flex flex-col gap-5 "
-          data-aos="fade-in"
+          data-aos="fade-right"
         >
           <h3 className="text-[20px] lg:text-[28px] text-[var(--secondaryColor)]">
             We Bring you the best Designs with Technology
@@ -34,8 +34,14 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="lg:flex-1 relative w-full  h-[40vh] lg:h-[50vh] lg:w-[40vw] overflow-hidden ">
-          <div className="absolute w-[53%] h-[80%] bg-yellow-400 top-0 left-0 flex justify-center items-center ">
+        <div
+          className="lg:flex-1 relative w-full  h-[40vh] lg:h-[50vh] lg:w-[40vw] overflow-hidden "
+          // data-aos="fade-left"
+        >
+          <div
+            className="absolute w-[53%] h-[80%] bg-yellow-400 top-0 left-0 flex justify-center items-center "
+            data-aos="fade-up-left"
+          >
             <img
               src="https://images.pexels.com/photos/8171898/pexels-photo-8171898.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
@@ -43,7 +49,10 @@ const Hero = () => {
             />
           </div>
 
-          <div className="absolute w-[40%] h-[40%] bg-purple-700 top-0 right-0 flex justify-center items-center ">
+          <div
+            className="absolute w-[40%] h-[40%] bg-purple-700 top-0 right-0 flex justify-center items-center "
+            data-aos="fade-down-left"
+          >
             <img
               src="https://images.pexels.com/photos/291536/pexels-photo-291536.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
@@ -51,7 +60,10 @@ const Hero = () => {
             />
           </div>
 
-          <div className="absolute w-[70%] h-[50%] lg:h-[52%] bg-[var(--secondaryColor)] bottom-4 right-0 flex justify-center items-center ">
+          <div
+            className="absolute w-[70%] h-[50%] lg:h-[52%] bg-[var(--secondaryColor)] bottom-4 right-0 flex justify-center items-center "
+            data-aos="fade-left"
+          >
             <img
               src="https://images.pexels.com/photos/2587175/pexels-photo-2587175.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""

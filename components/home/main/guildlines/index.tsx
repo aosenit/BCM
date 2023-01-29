@@ -11,16 +11,21 @@ const Guildlines = () => {
       <div className={`${contain} py-10 lg:grid grid-cols-2 gap-5`}>
         {" "}
         <div className="max-w-[90%]">
-          <Title
-            title={"Design Guildline"}
-            subTitle={"Our Print Design Guildline"}
-          />
-          <div className="text-[14px]  grid gap-3 my-5">
+          <div data-aos="fade-down">
+            {" "}
+            <Title
+              title={"Design Guildline"}
+              subTitle={"Our Print Design Guildline"}
+            />
+          </div>
+
+          <div
+            className="text-[14px]  grid gap-3 my-5"
+            data-aos="fade-down-right"
+          >
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
               magnam magni labore et ratione aperiam necessitatibus, quibusdam
-              quos nihil vitae? Id nobis delectus reprehenderit vitae aperiam
-              perferendis, itaque dicta ipsa sapiente fugiat quo corrupti
               quibusdam voluptas accusamus assumenda consequuntur ut.
             </p>
             <p className="text-[var(--secondaryColor)]">
@@ -31,13 +36,14 @@ const Guildlines = () => {
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
               magnam magni labore et ratione aperiam necessitatibus, quibusdam
-              quos nihil vitae? Id nobis delectus reprehenderit vitae aperiam
-              perferendis, itaque dicta ipsa sapiente fugiat quo corrupti
-              quibusdam voluptas accusamus assumenda consequuntur ut.
+              quos nihil vitae? Id nobis delectus reprehenderit vitae aperiam.
             </p>
           </div>
         </div>
-        <div className="flex flex-col  lg:grid grid-rows-3 grid-flow-col gap-4 lg:h-[40vh]">
+        <div
+          className="flex flex-col  lg:grid grid-rows-3 grid-flow-col gap-4 lg:h-[40vh]"
+          data-aos="fade-left"
+        >
           <div className="row-span-2 col-span-2 bg-slate-300 p-2">
             {<GuildImage />}
           </div>

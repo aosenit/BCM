@@ -32,8 +32,11 @@ const featuresData = [
 
 const Features = () => {
   return (
-    <div className="py-10 lg:py-20" id="features">
-      <div className={`${contain} grid lg:justify-center lg:text-center`}>
+    <div className="py-10 lg:pb-14 lg:pt-1" id="features">
+      <div
+        className={`${contain} grid lg:justify-center lg:text-center`}
+        data-aos="fade-down"
+      >
         <Title
           title="Company Features"
           subTitle="Experience Digital Printing"
@@ -43,7 +46,14 @@ const Features = () => {
         className={`${contain} px-4 py-2 lg:flex lg:flex-wrap gap-5 lg:justify-center`}
       >
         {featuresData.map((feature, index) => (
-          <FeatureCard key={index} {...feature} />
+          <div
+            className=""
+            key={index}
+            data-aos="fade-up"
+            data-aos-delay={`${index * 30}`}
+          >
+            <FeatureCard {...feature} />
+          </div>
         ))}
       </div>
     </div>

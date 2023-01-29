@@ -9,11 +9,9 @@ const Footer = () => {
     return <Card key={index} {...f} />;
   });
 
-  console.log(list);
-
   return (
     <footer className="bg-[var(--primaryColor)] text-white " id={"contact"}>
-      <div className={`${contain} py-5  `}>
+      <div className={`${contain} py-5  `} data-aos="fade">
         <Group className="py-2 max-w-md">
           <Box>
             <Text className="text-[var(--secondaryColor)] text-[24px]">

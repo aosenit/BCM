@@ -15,16 +15,21 @@ const About = () => {
             src="https://images.pexels.com/photos/716411/pexels-photo-716411.jpeg?auto=compress&cs=tinysrgb&w=1600"
             alt=""
             className="w-full object-cover object-center h-[90%]"
+            data-aos="zoom-in"
           />
 
           <img
             src="https://media.istockphoto.com/id/1140385944/photo/books-of-advertising-and-branding-in-front-grey-wall.jpg?b=1&s=612x612&w=0&k=20&c=y-_jfqHXji9Vlyj8WmJprtN4xtzDig95xcVBxzUGHSE="
             alt=""
             className="w-[60%] absolute object-cover object-left right-0 bottom-[-40px] h-[50%]"
+            data-aos="zoom-out"
           />
         </div>
 
-        <div className=" lg:mt-0 text-[14px] flex flex-col gap-3 flex-1">
+        <div
+          className=" lg:mt-0 text-[14px] flex flex-col gap-3 flex-1"
+          data-aos="fade-up"
+        >
           <h3 className="text-[25px] text-[var(--secondaryColor)]">About Us</h3>
           <div className="lg:w-[60ch]">
             <h2 className="leading-[40px] text-[35px] lg:text-[46px] lg:leading-[50px] mb-3">

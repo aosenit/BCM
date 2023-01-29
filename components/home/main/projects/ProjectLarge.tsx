@@ -3,7 +3,10 @@ import React from "react";
 
 const ProjectLarge = () => {
   return (
-    <div className="hidden lg:grid h-[80vh]  grid-cols-4 grid-rows-3 bg-yellow-300">
+    <div
+      className="hidden lg:grid h-[80vh]  grid-cols-4 grid-rows-3 bg-yellow-300"
+      data-aos="zoom-in"
+    >
       <div className="bg-stone-700 grid place-content-center p-4">
         <Image
           alt=""

@@ -8,7 +8,10 @@ const Projects = () => {
   return (
     <div className="py-10" id="project">
       <div className={`${contain} h-[400px] lg:h-fit`}>
-        <div className="lg:text-center mb-5 grid lg:justify-center">
+        <div
+          className="lg:text-center mb-5 grid lg:justify-center"
+          data-aos="fade-down"
+        >
           <Title title={"Recent Work"} subTitle={"Our Latest Project"} />
         </div>
         <ProjectMobile />
