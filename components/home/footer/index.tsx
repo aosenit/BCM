@@ -18,7 +18,7 @@ const Footer = () => {
         <Group className="py-2 max-w-lg">
           <Box>
             <Text className="text-[var(--secondaryColor)] text-[24px]">
-              MERCI BRANDI CONCEPT
+              MERCI BRANDIN CONCEPT
             </Text>
             <Text size={"sm"} className="mb-5 mt-2 text-[16px]">
               At Merci Brandi Concept (MBC), our mission is to help businesses
@@ -37,7 +37,7 @@ const Footer = () => {
 
         <Group className="border-t-[1px] border-slate-200  py-3 md:justify-between">
           <nav className="text-[14px] list-none  cursor-pointer ">
-            <Group>
+            <Group className="flex-col items-start lg:flex-row">
               <li className="hover:underline">
                 <a href="#home">Home</a>
               </li>
@@ -54,11 +54,14 @@ const Footer = () => {
           </nav>
           <Box className="md:flex items-center gap-2">
             <Text className="text-[14px]">
-              Copyright © Merci Brandin Concept 2023, All rights reserved.
+              Copyright © Merci Brandin Concept 2023, All Rights Reserved.
             </Text>
             <Text className="text-[14px] ">
               Designed by{" "}
-              <a href="#" className="text-[var(--secondaryColor)]">
+              <a
+                href="tel:+2348068095923"
+                className="text-[var(--secondaryColor)]"
+              >
                 TRAZ
               </a>
             </Text>

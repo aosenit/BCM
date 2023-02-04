@@ -34,7 +34,7 @@ const Home: NextPage = () => {
     <div className={``}>
       <Head>
         <title>Mercy Brandin</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/images/merciLogo.png" />
       </Head>
       <Header />
       <main className="">

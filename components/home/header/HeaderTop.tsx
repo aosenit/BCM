@@ -4,18 +4,23 @@ import { headerTag } from "../../../data/headerTag";
 import Tag from "./Tag";
 import { CgMenuGridO } from "react-icons/cg";
 import { Anchor } from "@mantine/core";
+import Image from "next/image";
 
 const HeaderTop = ({ setOpened }: any) => {
   return (
     <div className={`  bg-white w-full z-10 fixed lg:static top-0 left-0`}>
       <div className={`${contain} flex justify-between items-center h-[80px]`}>
-        <div className="logo">
-          <img
-            src="https://www.mercibrandin.com/assets/images/merciLogo.png"
-            alt=""
+        <Anchor href="/" className="flex items-center gap-2">
+          <Image
+            src="/assets/images/merciLogo.png"
+            alt="mbc logo"
             width={35}
+            height={35}
           />
-        </div>
+          <span className="hidden md:block text-[var(--primaryColor)] text-2xl font-extrabold">
+            M <span className="text-[var(--secondaryColor)]">B</span> C
+          </span>
+        </Anchor>
         <CgMenuGridO
           className="text-[30px] lg:hidden"
           onClick={() => setOpened(true)}

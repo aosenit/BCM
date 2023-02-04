@@ -33,10 +33,10 @@ const About = () => {
           <h3 className="text-[25px] text-[var(--secondaryColor)]">About Us</h3>
           <div className="lg:w-[60ch]">
             <h2 className="leading-[40px] text-[35px] lg:text-[46px] lg:leading-[50px] mb-3">
-              About Merci Brandi Concept (MBC)
+              About Merci Brandin Concept (MBC)
             </h2>
             <p>
-              Merci Brandi Concept (MBC) is a full-service branding agency that
+              Merci Brandin Concept (MBC) is a full-service branding agency that
               specializes in creating custom branding solutions for businesses
               of all sizes. Our services include Branding, POSM, Flags, and
               Signage. Whether you are looking to refresh your existing brand or

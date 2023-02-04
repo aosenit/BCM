@@ -16,7 +16,7 @@ const Hero = () => {
           data-aos="fade-right"
         >
           <h3 className="text-[20px] lg:text-[28px] text-[var(--secondaryColor)] uppercase">
-            Stand out from the crowd with Merci Brandi Concept (MBC)
+            Stand out from the crowd with Merci Brandin Concept (MBC)
           </h3>
           <h1 className="leading-[40px] text-[35px] lg:text-[42px] lg:leading-[50px] capitalize">
             Your one-stop shop for custom branding solutions

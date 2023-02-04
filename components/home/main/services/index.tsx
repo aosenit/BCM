@@ -4,17 +4,18 @@ import Title from "../Title";
 import { useRouter } from "next/router";
 import { Anchor } from "@mantine/core";
 import { FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 const services = [
   {
-    image: "https://www.mercibrandin.com/assets/newImage/flagService.jpeg",
+    image: "/assets/newImage/flagService.jpeg",
     title: "Custom Flags",
     content: "Flying Banner, Flagpole, Telescope, Pop flag, Street flag",
     bg: "bg-red-500",
     link: "flag",
   },
   {
-    image: "https://www.mercibrandin.com/assets/newImage/capOne.jpeg",
+    image: "/assets/feb/cupFeb.jpeg",
     title: "Branding ",
     content:
       "Interior and Exterior, Promotional & Corperate Gifts, Merchandizing",
@@ -22,14 +23,14 @@ const services = [
     link: "branding",
   },
   {
-    image: "https://www.mercibrandin.com/assets/newImage/signageService.jpeg",
+    image: "/assets/newImage/signageService.jpeg",
     title: "Signage",
     content: "Pylon (freestanding), Fascia (wall sign), Flange (hanging sign)",
     bg: "bg-red-100",
     link: "signage",
   },
   {
-    image: "https://www.mercibrandin.com/assets/newImage/posmService.jpeg",
+    image: "/assets/newImage/spaghettiStand.jpeg",
     title: "POSM",
     content: "Tents, Boards, Banners, Frames",
     bg: "bg-yellow-500",
@@ -64,10 +65,12 @@ const Services = () => {
                 <div
                   className={`flex-[.6] grid place-content-center  ${service.bg} `}
                 >
-                  <img
-                    className="w-full object-contain object-center h-[100px] "
+                  <Image
+                    className="w-full  object-top h-[100px] object-contain"
                     src={service.image}
                     alt={service.title}
+                    width={100}
+                    height={100}
                   />
                 </div>
                 <div className="flex-[.5]  flex flex-col justify-center lg:text-center">

@@ -36,17 +36,27 @@ const flag = [
 ];
 const posm = [
   {
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSojsT3NGDSxs21qS6Z7xH1DFtL-0z0ZZJC6w&usqp=CAU",
+    src: "/assets/newImage/stand.jpeg",
     title: "American Flag",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnbW5f-NvWCyvfF_3TKfkJnPnAzFDlXEYREFR60BwyD77pgVcrMAM6w155uToDxRLio08&usqp=CAU",
+    src: "/assets/newImage/spaghettiStand.jpeg",
     title: "Guinea Flag",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYEe4WiqDwL0GBVCcQ2gqq76TR3fJbRdOenS9AXM0igMXPUwklfoeyaWDJWuUeiiZXNc&usqp=CAU",
+    src: "/assets/feb/rubPOSMFeb.jpeg",
+    title: "France Flag",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    src: "/assets/feb/comartPOSMFeb.jpeg",
+    title: "France Flag",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    src: "/assets/feb/3xPOSMFeb.jpeg",
     title: "France Flag",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
@@ -77,22 +87,42 @@ const signage = [
 
 const branding = [
   {
-    src: "https://hazken.com/assets/images/bg/branded_screen_printing_shirt.jpg",
-    title: "American Flag",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-  },
-  {
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDaYZwFvJ_DJvO9FwLFYVLNRh1LMvvG_PwpkcGZJ8_Ol_KC47H8fwxD0LuTtXf2UwgEio&usqp=CAU",
-    title: "Guinea Flag",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-  },
-  {
-    src: "https://quikprint.ng/wp-content/uploads/2019/07/embroidered-cap.jpg",
+    src: "/assets/feb/apronFeb.jpeg",
     title: "France Flag",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
   {
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHVHMSBeABjiwPg8gip8cuAjTtOzpn7Dr0p64W2ZXM17yLLOelQPm7mm4MYmYC_pNjkE&usqp=CAU",
+    src: "/assets/feb/capFeb.jpeg",
+    title: "France Flag",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    src: "/assets/feb/cupFeb.jpeg",
+    title: "France Flag",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    src: "/assets/feb/kiaBagFeb.jpeg",
+    title: "France Flag",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    src: "/assets/feb/topFeb.jpeg",
+    title: "France Flag",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    src: "/assets/feb/umbrellaFeb.jpeg",
+    title: "France Flag",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    src: "/assets/newImage/Jersey.jpeg",
+    title: "France Flag",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    src: "/assets/newImage/capOne.jpeg",
     title: "France Flag",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
@@ -111,14 +141,14 @@ const AllProduct = () => {
       return (
         <Card
           key={index}
-          className="mt-3 max-w-sm"
+          className="mt-3 max-w-sm h-[400px] p-4"
           data-aos="fade-up"
           data-aos-delay={index * 30}
         >
-          <Image src={src} alt={title} fit="contain" />
-          <Box className="pt-5">
-            <h3>{title}</h3>
-            <p className="">{desc}</p>
+          <Image src={src} alt={title} fit="contain" height={300} />
+          <Box className="">
+            {/* <h3>{title}</h3>
+            <p className="">{desc}</p> */}
           </Box>
         </Card>
       );
@@ -130,14 +160,14 @@ const AllProduct = () => {
       >
         <Group className={`${contain} `}>
           <Anchor
-            href="/#services"
+            href="/"
             className="flex items-center text-[var(--primaryColor)]"
           >
-            {" "}
-            <span className="mr-2">
-              <FaArrowLeft />
-            </span>{" "}
-            Go Back
+            <Image
+              src="/assets/images/merciLogo.png"
+              alt="mbc logo"
+              width={30}
+            />
           </Anchor>
         </Group>
       </div>

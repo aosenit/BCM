@@ -53,26 +53,36 @@ const Guildlines = () => {
           data-aos="fade-left"
         >
           <div className="row-span-2 col-span-2 bg-slate-300 p-2">
-            {<GuildImage />}
+            {<GuildImage src="/assets/gif/herogifTwo.gif" />}
           </div>
 
           <div className="hidden lg:block col-span-4 bg-red-300 p-2 ">
-            {<GuildImage />}
+            {<GuildImage src="/assets/newImage/lumosBanner.jpeg" />}
           </div>
           <div className="row-span-1 col-span-2 hidden lg:grid grid-cols-3 gap-2">
             <div className="bg-blue-500 p-1">
               {" "}
-              {<GuildImage height={"h-full"} />}
+              {<GuildImage height={"h-full"} src="/assets/newImage/kn.jpeg" />}
             </div>
             <div className="bg-red-500 p-1">
-              {<GuildImage height={"h-full"} />}
+              {
+                <GuildImage
+                  height={"h-full"}
+                  src="/assets/newImage/jersey.jpeg"
+                />
+              }
             </div>
             <div className="bg-orange-500 p-1">
-              {<GuildImage height={"h-full"} />}
+              {
+                <GuildImage
+                  height={"h-full"}
+                  src="/assets/newImage/stand.jpeg"
+                />
+              }
             </div>
           </div>
           <div className="hidden lg:block row-span-1 col-span-2 bg-yellow-300 p-2 mt-2">
-            {<GuildImage />}
+            {<GuildImage src="/assets/feb/cupFeb.jpeg" />}
           </div>
         </div>
       </div>
