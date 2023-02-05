@@ -24,7 +24,7 @@ const Guildlines = () => {
   ));
   return (
     <div
-      className="bg-[var(--primaryColor)] text-white lg:h-[100vh] lg:grid lg:place-content-center "
+      className="w-full overflow-hidden bg-[var(--primaryColor)] text-white lg:h-[100vh] lg:grid lg:place-content-center "
       id="guildlines"
     >
       <div className={`${contain} py-10 lg:grid grid-cols-2 gap-5`}>

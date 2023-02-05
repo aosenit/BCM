@@ -6,7 +6,7 @@ import { GiPirateCannon } from "react-icons/gi";
 
 const About = () => {
   return (
-    <div className="py-14 pb-20" id="about">
+    <div className=" py-14 pb-20" id="about">
       <div
         className={`${contain} flex flex-col-reverse  gap-10 lg:gap-20 lg:py-20  lg:flex-row `}
       >
