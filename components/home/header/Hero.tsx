@@ -5,7 +5,7 @@ import { Anchor } from "@mantine/core";
 const Hero = () => {
   return (
     <div
-      className="w-full pt-[120px] lg:grid items-center h-fit lg:h-[calc(100%_-_80px)] text-[14px] lg:text-[14px] py-[3rem] lg:py-0 px-2 lg:px-0"
+      className=" w-full pt-[120px] lg:grid items-center h-fit lg:h-[calc(100%_-_80px)] text-[14px] lg:text-[14px] py-[3rem] lg:py-0 px-2 lg:px-0"
       id="home"
     >
       <div
